@@ -1,4 +1,4 @@
-# Memair Desktop App
+# Memair Desktop Player
 
 ## Development
 
@@ -10,4 +10,4 @@ Build package
 
 - Mac Example
 
-`electron-packager ./ Memair --platform=darwin --arch=x64 --icon=assets/icons/mac/memair.icns --overwrite`
+`electron-packager ./ desktop_player --platform=darwin --arch=x64 --icon=assets/icons/mac/memair.icns --overwrite`
