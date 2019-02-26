@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Memair Player</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Greg Clarke">
+      <style>
+        html, body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+   </head>
+   
+   <body>
+      <div style="width:100%; height:100%">
+         <webview id="player" autosize="on" src="https://memair.com/player?desktop_app=true" style="min-width:100%; min-height:100%">
+            <div class="indicator"></div>
+         </webview>
+      </div>
+      
+      <script type = "text/javascript">
+         // Event handlers for loading events.
+         // Use these to handle loading screens, transitions, etc
+         onload = () => {
+            const webview = document.getElementById('player')
+            const indicator = document.querySelector('.indicator')
+
+            const loadstart = () => {
+               indicator.innerText = 'loading...'
+            }
+
+            const loadstop = () => {
+               indicator.innerText = ''
+            }
+
+            webview.addEventListener('did-start-loading', loadstart)
+            webview.addEventListener('did-stop-loading', loadstop)
+         }
+      </script>
+   </body>
+</html>

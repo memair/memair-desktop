@@ -1,0 +1,31 @@
+{
+  "name": "Memair Player",
+  "version": "0.0.1",
+  "description": "Memair Player",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memair/Desktop_Player.git"
+  },
+  "keywords": [
+    "YouTube",
+    "Videos"
+  ],
+  "author": "Greg Clarke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/memair/Desktop_Player/issues"
+  },
+  "homepage": "https://github.com/memair/Desktop_Player#readme",
+  "devDependencies": {
+    "electron": "^4.0.5",
+    "electron-packager": "^13.1.0",
+    "electron-rebuild": "^1.8.4",
+    "electron-builder": "20.38.5"
+  }
+}
